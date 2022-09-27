@@ -1,10 +1,10 @@
 import java.util.*;
-public class HashSet{
+public class Hast_Set{
 
 
     public static void main(String args[]) throws InterruptedException{
         HashSet<String> set=new HashSet<String>(5);      
-        
+       
         Scanner s = new Scanner(System.in);
         System.out.println("Your Fevorite Colors");
         Thread.sleep(5000);
