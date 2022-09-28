@@ -9,7 +9,7 @@ public class Hast_Set{
         System.out.println("Your Fevorite Colors");
         Thread.sleep(5000);
         System.out.println(" ");
-        for(int i = 0;i <= 5; i++){
+        for(int i = 0;i <= 5;){
             System.out.println("Enter your First Fevorite Color");
             String ans1=s.next();
             set.add(ans1);

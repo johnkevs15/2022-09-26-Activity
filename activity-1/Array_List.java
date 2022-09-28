@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Array{
+public class Array_List{
 
     public static void main(String args[]) throws InterruptedException{
         ArrayList<String> array= new ArrayList<String>(5);
@@ -9,7 +9,7 @@ public class Array{
         System.out.println("Your Fevorite Colors");
         Thread.sleep(5000);
         System.out.println(" ");
-        for(int i = 0;i <= 5; i++){
+        for(int i = 0;i <= 5;){
             System.out.println("Enter your First Fevorite Color");
             String ans1=s.next();
             array.add(ans1);
