@@ -10,3 +10,4 @@ public class number<Varaible> {
         return num;
     }
 }
+ 
