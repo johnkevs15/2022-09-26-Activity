@@ -11,21 +11,20 @@ public  User(String Fname, String Lname){
   this.Lname = Lname;
     
   }
-  
-  public String getFname(String Fname){
-    return this.Fname;
-
+  public void setFname(String fname) {
+      Fname = fname;
   }
-
-  public String setFname (String Fname){
-    return this.Fname = Fname;
+  public String getFname() {
+      return Fname;
   }
-
-public String getLname() {
-    return Lname;
-}
-public String setLname(String lname) {
-    return Lname = lname;
-}
-
+  public String getLname() {
+      return Lname;
+  }
+  public void setLname(String lname) {
+      Lname = lname;
+  }
+// public String toString(){
+//   String user = "The user "+ this.getFname()+ "and the last name: "+this.getLname();
+//   return user;
+// }
 }

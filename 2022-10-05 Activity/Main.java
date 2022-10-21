@@ -8,6 +8,7 @@ public class Main {
             while (true) {
                 System.out.println("How many user do you want to add: ");
                 String ans = sc.nextLine();
+                System.out.println(ans);
                 int integer = Integer.MAX_VALUE;
                 try {
                     integer = Integer.parseInt(ans);
@@ -23,8 +24,8 @@ public class Main {
                         System.out.println(e.getMessage());
 
                     }
-                    List<User> use = new ArrayList<User>(5);
-                    for (int i = 5; i > integer; i++) {
+                    List<User> use = new ArrayList<User>();
+                    for (int i = 0; i > integer; i++) {
                         System.out.println("Enter your First Name: ");
                         sc.next();
                         String fname = sc.nextLine();
@@ -34,13 +35,14 @@ public class Main {
                         User user = new User(fname, lname);
                         use.add(user);
                         System.out.println("Successfully Add to UserList");
-
+                        // System.out.println(use);
+                       
                     }
                 } catch (NumberFormatException e) {
                     System.out.println("Error! Invalid integer. Try again.");
-
+                    break;
                 }
-                break;
+             
 
             }
         }
